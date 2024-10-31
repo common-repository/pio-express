@@ -1,0 +1,185 @@
+.mr-1{
+margin-right:20px;
+}
+
+.mr-2{
+margin-right:25px;
+}
+
+.mr-3{
+margin-right:50px;
+}
+
+.mr-w{
+    margin-right:5px;
+}
+.inp-d{
+    width: 65px;
+}
+.switch{
+position:relative;
+display:inline-block;
+width:30px;
+height:16px;
+}
+
+.switch input{
+opacity:0;
+width:0;
+height:0;
+}
+
+.slider{
+position:absolute;
+cursor:pointer;
+top:0;
+left:0;
+right:0;
+bottom:0;
+background-color:#ccc;
+-webkit-transition:.4s;
+transition:.4s;
+}
+
+.slider:before{
+position:absolute;
+content:"";
+height:12px;
+width:12px;
+left:2px;
+bottom:2px;
+background-color:white;
+-webkit-transition:.4s;
+transition:.4s;
+}
+
+input:checked+.slider{
+background-color:#2196F3;
+}
+
+input:focus+.slider{
+box-shadow:001px#2196F3;
+}
+
+input:checked+.slider:before{
+-webkit-transform:translateX(14px);
+-ms-transform:translateX(14px);
+transform:translateX(14px);
+}
+
+/*Roundedsliders*/
+.slider.round{
+border-radius:16px;
+}
+
+.slider.round:before{
+border-radius:50%;
+}
+
+.box{
+flex:1;
+}
+
+.backgroundImage{
+margin-top:5px;
+margin-bottom:5px;
+}
+
+.backgroundColor{
+margin-top:5px;
+margin-bottom:5px;
+}
+
+.mt-1{
+margin-top:10px;
+}
+
+.mt-2{
+margin-top:20px;
+}
+
+.mt-3{
+margin-top:30px;
+}
+
+.mb-1{
+margin-bottom:10px;
+}
+
+.mb-2{
+margin-bottom:20px;
+}
+
+.mb-3{
+margin-bottom:30px;
+}
+
+.cbtn{
+display:inline-block;
+}
+
+.mlrd{
+margin-left:10px;
+}
+/* faq section */
+.collapse {
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: block;
+    font-size: 23px;
+    line-height: 40px;
+    border: 1px solid silver;
+    border-radius: 10px;
+    padding-left: 15px;
+    position: relative;
+    background: #e5e5e5;
+}
+
+.collapse:after {
+    font-family: dashicons;
+    content: "\f140";
+    position: absolute;
+    color: #868686;
+    font-size: 18px;
+    line-height: 22px;
+    right: 20px;
+    top: calc(50% - 10px);
+
+}
+
+.contentdiv {
+    border: 1px dashed darkgrey;
+    padding: 0px 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border-top: 0px;
+}
+
+.collapse+input {
+    display: none;
+    /* hide the checkboxes */
+}
+
+.collapse+input+div {
+    display: none;
+}
+
+.collapse+input:checked+div {
+    display: block;
+}
+.acc-panel .contentdiv{
+    display:none;
+}
+.acc-panel.active .contentdiv{
+    display: block;
+}
+.acc-panel.active .collapse:after {
+    font-family: dashicons;
+    content: "\f142";
+    position: absolute;
+    color: #868686;
+    font-size: 18px;
+    line-height: 22px;
+    right: 20px;
+    top: calc(50% - 10px);
+}
